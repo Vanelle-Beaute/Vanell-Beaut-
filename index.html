@@ -1,0 +1,604 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Vanellé - Beauty &amp; Self-care Blog
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&amp;family=Lato&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Lato', sans-serif;
+      background-color: #faf7f3;
+      color: #4a4a4a;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Cormorant Garamond', serif;
+      color: #6b4c3b;
+    }
+    /* Custom scrollbar for sidebar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #cbb8a9;
+      border-radius: 3px;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen flex flex-col">
+  <!-- HEADER / NAVBAR -->
+  <header class="bg-[#f5ede6] border-b border-[#d7c9bb] sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="flex items-center justify-between h-16">
+     <div class="flex items-center space-x-8">
+      <a class="text-3xl font-serif text-[#6b4c3b] font-semibold tracking-wide select-none" href="#">
+       Vanellé
+      </a>
+      <ul class="hidden md:flex space-x-6 text-[#7a6a5a] font-medium text-sm">
+       <li>
+        <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+         Home
+        </a>
+       </li>
+       <li class="relative group">
+        <button aria-expanded="false" aria-haspopup="true" class="flex items-center space-x-1 hover:text-[#a1866f] transition-colors duration-200 focus:outline-none">
+         <span>
+          Skincare
+         </span>
+         <i class="fas fa-chevron-down text-xs">
+         </i>
+        </button>
+        <ul aria-label="Skincare submenu" class="absolute left-0 mt-2 w-40 bg-[#f5ede6] border border-[#d7c9bb] rounded-md shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 z-50" role="menu">
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Cleanser
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Toner
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Serum
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Moisturizer
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Sunscreen
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Mask
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Routines
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="relative group">
+        <button aria-expanded="false" aria-haspopup="true" class="flex items-center space-x-1 hover:text-[#a1866f] transition-colors duration-200 focus:outline-none">
+         <span>
+          Makeup
+         </span>
+         <i class="fas fa-chevron-down text-xs">
+         </i>
+        </button>
+        <ul aria-label="Makeup submenu" class="absolute left-0 mt-2 w-36 bg-[#f5ede6] border border-[#d7c9bb] rounded-md shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 z-50" role="menu">
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Base
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Eyes
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Lips
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Cheek
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Everyday Looks
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li>
+        <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+         Fragrance
+        </a>
+       </li>
+       <li class="relative group">
+        <button aria-expanded="false" aria-haspopup="true" class="flex items-center space-x-1 hover:text-[#a1866f] transition-colors duration-200 focus:outline-none">
+         <span>
+          Body &amp; Hair
+         </span>
+         <i class="fas fa-chevron-down text-xs">
+         </i>
+        </button>
+        <ul aria-label="Body &amp; Hair submenu" class="absolute left-0 mt-2 w-44 bg-[#f5ede6] border border-[#d7c9bb] rounded-md shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 z-50" role="menu">
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Body Wash
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Body Lotion
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Hair Care
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Scrub
+          </a>
+         </li>
+         <li>
+          <a class="block px-4 py-2 text-[#7a6a5a] hover:bg-[#e9dfd3] hover:text-[#6b4c3b] text-sm" href="#">
+           Hair Mask
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li>
+        <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+         Self-care
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+         Beauty 101
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="flex items-center space-x-4">
+      <button aria-label="Search" class="text-[#7a6a5a] hover:text-[#a1866f] transition-colors duration-200 focus:outline-none">
+       <i class="fas fa-search fa-lg">
+       </i>
+      </button>
+      <!-- Mobile menu button -->
+      <button aria-label="Toggle menu" class="md:hidden text-[#7a6a5a] hover:text-[#a1866f] focus:outline-none" id="mobile-menu-button">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </nav>
+   </div>
+   <!-- Mobile menu -->
+   <div class="md:hidden bg-[#f5ede6] border-t border-[#d7c9bb] hidden" id="mobile-menu">
+    <ul class="px-4 pt-2 pb-4 space-y-1 text-[#7a6a5a] font-medium text-base">
+     <li>
+      <a class="block py-2 hover:text-[#a1866f]" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <details class="group">
+       <summary class="flex justify-between items-center py-2 cursor-pointer hover:text-[#a1866f]">
+        Skincare
+        <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition-transform duration-200">
+        </i>
+       </summary>
+       <ul class="pl-4 space-y-1">
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Cleanser
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Toner
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Serum
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Moisturizer
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Sunscreen
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Mask
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Routines
+         </a>
+        </li>
+       </ul>
+      </details>
+     </li>
+     <li>
+      <details class="group">
+       <summary class="flex justify-between items-center py-2 cursor-pointer hover:text-[#a1866f]">
+        Makeup
+        <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition-transform duration-200">
+        </i>
+       </summary>
+       <ul class="pl-4 space-y-1">
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Base
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Eyes
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Lips
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Cheek
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Everyday Looks
+         </a>
+        </li>
+       </ul>
+      </details>
+     </li>
+     <li>
+      <a class="block py-2 hover:text-[#a1866f]" href="#">
+       Fragrance
+      </a>
+     </li>
+     <li>
+      <details class="group">
+       <summary class="flex justify-between items-center py-2 cursor-pointer hover:text-[#a1866f]">
+        Body &amp; Hair
+        <i class="fas fa-chevron-down text-xs group-open:rotate-180 transition-transform duration-200">
+        </i>
+       </summary>
+       <ul class="pl-4 space-y-1">
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Body Wash
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Body Lotion
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Hair Care
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Scrub
+         </a>
+        </li>
+        <li>
+         <a class="block py-1 hover:text-[#a1866f]" href="#">
+          Hair Mask
+         </a>
+        </li>
+       </ul>
+      </details>
+     </li>
+     <li>
+      <a class="block py-2 hover:text-[#a1866f]" href="#">
+       Self-care
+      </a>
+     </li>
+     <li>
+      <a class="block py-2 hover:text-[#a1866f]" href="#">
+       Beauty 101
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <!-- MAIN CONTENT AREA -->
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row gap-10">
+   <!-- Blog Posts Section -->
+   <section class="flex-1 min-w-0">
+    <article class="mb-12">
+     <img alt="Elegant flat lay of beauty products in nude and earth tone pastel colors on a soft linen background, featuring skincare bottles, makeup brushes, and flowers" class="w-full rounded-lg object-cover mb-6" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f53e527a-88c9-487d-bccd-2a7cad0e50d5.jpg" width="800"/>
+     <h2 class="text-3xl font-serif mb-3 text-[#6b4c3b]">
+      5 Masker Wajah yang Nyaman untuk Me Time
+     </h2>
+     <p class="text-[#7a6a5a] mb-4 leading-relaxed">
+      Menikmati waktu me time dengan masker wajah yang nyaman dan menenangkan kulit adalah ritual penting. Berikut rekomendasi masker dengan bahan alami dan tekstur lembut yang cocok untuk semua jenis kulit.
+     </p>
+     <a class="inline-block text-[#a1866f] font-semibold hover:underline" href="#">
+      Read more →
+     </a>
+    </article>
+    <article class="mb-12">
+     <img alt="Soft pastel colored skincare bottles and jars arranged neatly on a wooden tray with green leaves, representing a gentle skincare routine" class="w-full rounded-lg object-cover mb-6" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d0b7bfa9-1dde-49e2-f93f-3d6a2e5d2c47.jpg" width="800"/>
+     <h2 class="text-3xl font-serif mb-3 text-[#6b4c3b]">
+      Rangkaian Skincare untuk Kulit Sensitif
+     </h2>
+     <p class="text-[#7a6a5a] mb-4 leading-relaxed">
+      Kulit sensitif membutuhkan perhatian khusus. Pelajari rangkaian skincare yang lembut dan efektif untuk menjaga kesehatan kulit tanpa iritasi.
+     </p>
+     <a class="inline-block text-[#a1866f] font-semibold hover:underline" href="#">
+      Read more →
+     </a>
+    </article>
+    <article class="mb-12">
+     <img alt="Close-up of a woman applying soft pastel makeup with peach and lilac tones, demonstrating an everyday natural makeup look" class="w-full rounded-lg object-cover mb-6" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/7c225a1a-8f23-4316-b5cd-99cb29cec19c.jpg" width="800"/>
+     <h2 class="text-3xl font-serif mb-3 text-[#6b4c3b]">
+      Tutorial Makeup Natural untuk Sehari-hari
+     </h2>
+     <p class="text-[#7a6a5a] mb-4 leading-relaxed">
+      Ingin tampil segar dan natural setiap hari? Ikuti tutorial makeup dengan warna-warna pastel yang lembut dan mudah diaplikasikan.
+     </p>
+     <a class="inline-block text-[#a1866f] font-semibold hover:underline" href="#">
+      Read more →
+     </a>
+    </article>
+    <article class="mb-12">
+     <img alt="Elegant bottles of perfume in pastel colors on a marble surface with soft natural light, illustrating fragrance layering techniques" class="w-full rounded-lg object-cover mb-6" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ec2ff80c-286c-4e96-19ba-1bf18aa576ec.jpg" width="800"/>
+     <h2 class="text-3xl font-serif mb-3 text-[#6b4c3b]">
+      Cara Layering Parfum untuk Aroma yang Tahan Lama
+     </h2>
+     <p class="text-[#7a6a5a] mb-4 leading-relaxed">
+      Pelajari teknik layering parfum agar aroma favoritmu bertahan lebih lama dan menciptakan kesan unik yang personal.
+     </p>
+     <a class="inline-block text-[#a1866f] font-semibold hover:underline" href="#">
+      Read more →
+     </a>
+    </article>
+    <article class="mb-12">
+     <img alt="Collection of body and hair care products in pastel earth tones on a soft fabric background with natural elements" class="w-full rounded-lg object-cover mb-6" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d0ea78ac-3782-446d-79f8-0ee6b8af4f7c.jpg" width="800"/>
+     <h2 class="text-3xl font-serif mb-3 text-[#6b4c3b]">
+      Tips Perawatan Tubuh dan Rambut untuk Kulit Kering
+     </h2>
+     <p class="text-[#7a6a5a] mb-4 leading-relaxed">
+      Kulit kering dan rambut kusam? Simak tips perawatan tubuh dan rambut yang mudah dan efektif untuk menjaga kelembapan dan kesehatan.
+     </p>
+     <a class="inline-block text-[#a1866f] font-semibold hover:underline" href="#">
+      Read more →
+     </a>
+    </article>
+   </section>
+   <!-- SIDEBAR -->
+   <aside class="w-full md:w-80 flex-shrink-0 space-y-10">
+    <!-- About Me Widget -->
+    <section class="bg-[#f5ede6] rounded-lg p-6 border border-[#d7c9bb]">
+     <h3 class="text-xl font-serif mb-4 text-[#6b4c3b]">
+      About Me
+     </h3>
+     <img alt="Portrait of Vanellé founder, a warm and elegant woman with soft makeup and natural hairstyle, smiling gently" class="w-36 h-36 rounded-full mx-auto mb-4 object-cover" height="150" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b017866b-7940-4e93-5cec-2bde149f52f9.jpg" width="150"/>
+     <p class="text-[#7a6a5a] text-sm leading-relaxed text-center">
+      Hi, I’m Vanellé! Passionate about beauty, self-care, and sharing tips to help you glow inside and out with gentle, natural products.
+     </p>
+    </section>
+    <!-- Search Bar Widget -->
+    <section class="bg-[#f5ede6] rounded-lg p-6 border border-[#d7c9bb]">
+     <h3 class="text-xl font-serif mb-4 text-[#6b4c3b]">
+      Search
+     </h3>
+     <form class="flex">
+      <input aria-label="Search articles" class="flex-grow rounded-l-md border border-[#cbb8a9] px-4 py-2 text-[#7a6a5a] focus:outline-none focus:ring-2 focus:ring-[#a1866f]" placeholder="Search articles..." type="search"/>
+      <button aria-label="Submit search" class="bg-[#a1866f] hover:bg-[#8c6f56] text-white rounded-r-md px-4 py-2 transition-colors duration-200" type="submit">
+       <i class="fas fa-search">
+       </i>
+      </button>
+     </form>
+    </section>
+    <!-- Popular Posts Widget -->
+    <section class="bg-[#f5ede6] rounded-lg p-6 border border-[#d7c9bb]">
+     <h3 class="text-xl font-serif mb-4 text-[#6b4c3b]">
+      Popular Posts
+     </h3>
+     <ul class="space-y-4 text-[#7a6a5a] text-sm">
+      <li class="flex items-center space-x-3">
+       <img alt="Thumbnail of a pastel colored facial mask jar with soft lighting" class="w-14 h-14 rounded-md object-cover flex-shrink-0" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b2eb6547-e07f-4765-c875-db331112d1fc.jpg" width="60"/>
+       <a class="hover:text-[#a1866f] font-semibold line-clamp-2" href="#">
+        5 Masker Wajah yang Nyaman untuk Me Time
+       </a>
+      </li>
+      <li class="flex items-center space-x-3">
+       <img alt="Thumbnail of pastel colored skincare bottles on wooden tray with green leaves" class="w-14 h-14 rounded-md object-cover flex-shrink-0" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/68472dba-d560-4109-ae5d-695739f190b0.jpg" width="60"/>
+       <a class="hover:text-[#a1866f] font-semibold line-clamp-2" href="#">
+        Rangkaian Skincare untuk Kulit Sensitif
+       </a>
+      </li>
+      <li class="flex items-center space-x-3">
+       <img alt="Thumbnail of soft pastel makeup products including brushes and palettes" class="w-14 h-14 rounded-md object-cover flex-shrink-0" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0e656342-9d20-419a-2378-c54f2318b401.jpg" width="60"/>
+       <a class="hover:text-[#a1866f] font-semibold line-clamp-2" href="#">
+        Tutorial Makeup Natural untuk Sehari-hari
+       </a>
+      </li>
+      <li class="flex items-center space-x-3">
+       <img alt="Thumbnail of elegant pastel perfume bottles on marble surface" class="w-14 h-14 rounded-md object-cover flex-shrink-0" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/22d84607-8abb-481e-b479-e66cda6183ca.jpg" width="60"/>
+       <a class="hover:text-[#a1866f] font-semibold line-clamp-2" href="#">
+        Cara Layering Parfum untuk Aroma yang Tahan Lama
+       </a>
+      </li>
+      <li class="flex items-center space-x-3">
+       <img alt="Thumbnail of body and hair care products in pastel earth tones" class="w-14 h-14 rounded-md object-cover flex-shrink-0" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/fb551530-3ca4-42f8-2a5e-81f07b61eae9.jpg" width="60"/>
+       <a class="hover:text-[#a1866f] font-semibold line-clamp-2" href="#">
+        Tips Perawatan Tubuh dan Rambut untuk Kulit Kering
+       </a>
+      </li>
+     </ul>
+    </section>
+    <!-- Category List Widget -->
+    <section class="bg-[#f5ede6] rounded-lg p-6 border border-[#d7c9bb]">
+     <h3 class="text-xl font-serif mb-4 text-[#6b4c3b]">
+      Categories
+     </h3>
+     <ul class="flex flex-wrap gap-2 text-sm">
+      <li>
+       <a class="inline-block bg-[#e9dfd3] text-[#7a6a5a] rounded-full px-3 py-1 hover:bg-[#a1866f] hover:text-white transition-colors duration-200" href="#">
+        Skincare
+       </a>
+      </li>
+      <li>
+       <a class="inline-block bg-[#e9dfd3] text-[#7a6a5a] rounded-full px-3 py-1 hover:bg-[#a1866f] hover:text-white transition-colors duration-200" href="#">
+        Makeup
+       </a>
+      </li>
+      <li>
+       <a class="inline-block bg-[#e9dfd3] text-[#7a6a5a] rounded-full px-3 py-1 hover:bg-[#a1866f] hover:text-white transition-colors duration-200" href="#">
+        Fragrance
+       </a>
+      </li>
+      <li>
+       <a class="inline-block bg-[#e9dfd3] text-[#7a6a5a] rounded-full px-3 py-1 hover:bg-[#a1866f] hover:text-white transition-colors duration-200" href="#">
+        Body &amp; Hair
+       </a>
+      </li>
+      <li>
+       <a class="inline-block bg-[#e9dfd3] text-[#7a6a5a] rounded-full px-3 py-1 hover:bg-[#a1866f] hover:text-white transition-colors duration-200" href="#">
+        Self-care
+       </a>
+      </li>
+      <li>
+       <a class="inline-block bg-[#e9dfd3] text-[#7a6a5a] rounded-full px-3 py-1 hover:bg-[#a1866f] hover:text-white transition-colors duration-200" href="#">
+        Beauty 101
+       </a>
+      </li>
+      <li>
+       <a class="inline-block bg-[#e9dfd3] text-[#7a6a5a] rounded-full px-3 py-1 hover:bg-[#a1866f] hover:text-white transition-colors duration-200" href="#">
+        Tips &amp; Tricks
+       </a>
+      </li>
+      <li>
+       <a class="inline-block bg-[#e9dfd3] text-[#7a6a5a] rounded-full px-3 py-1 hover:bg-[#a1866f] hover:text-white transition-colors duration-200" href="#">
+        Reviews
+       </a>
+      </li>
+     </ul>
+    </section>
+    <!-- Social Media Icons Widget -->
+    <section class="bg-[#f5ede6] rounded-lg p-6 border border-[#d7c9bb] text-center">
+     <h3 class="text-xl font-serif mb-4 text-[#6b4c3b]">
+      Follow Me
+     </h3>
+     <div class="flex justify-center space-x-6 text-[#7a6a5a] text-2xl">
+      <a aria-label="Instagram" class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a aria-label="Facebook" class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a aria-label="Twitter" class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a aria-label="Pinterest" class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+       <i class="fab fa-pinterest-p">
+       </i>
+      </a>
+      <a aria-label="YouTube" class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+       <i class="fab fa-youtube">
+       </i>
+      </a>
+     </div>
+    </section>
+    <!-- Newsletter Signup Widget -->
+    <section class="bg-[#f5ede6] rounded-lg p-6 border border-[#d7c9bb]">
+     <h3 class="text-xl font-serif mb-4 text-[#6b4c3b]">
+      Newsletter
+     </h3>
+     <p class="text-[#7a6a5a] mb-4 text-sm leading-relaxed">
+      Subscribe to get the latest beauty tips and updates directly to your inbox.
+     </p>
+     <form>
+      <label class="sr-only" for="newsletter-email">
+       Email address
+      </label>
+      <input class="w-full rounded-md border border-[#cbb8a9] px-4 py-2 mb-3 text-[#7a6a5a] focus:outline-none focus:ring-2 focus:ring-[#a1866f]" id="newsletter-email" name="email" placeholder="Your email address" required="" type="email"/>
+      <button class="w-full bg-[#a1866f] hover:bg-[#8c6f56] text-white font-semibold rounded-md py-2 transition-colors duration-200" type="submit">
+       Subscribe
+      </button>
+     </form>
+    </section>
+   </aside>
+  </main>
+  <!-- FOOTER -->
+  <footer class="bg-[#f5ede6] border-t border-[#d7c9bb] mt-20">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <nav class="flex flex-wrap justify-center gap-6 text-[#7a6a5a] text-sm font-medium">
+     <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+      About
+     </a>
+     <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+      Contact
+     </a>
+     <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+      Privacy Policy
+     </a>
+     <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+      Terms &amp; Conditions
+     </a>
+     <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+      Disclaimer
+     </a>
+     <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+      Affiliate Disclosure
+     </a>
+     <a class="hover:text-[#a1866f] transition-colors duration-200" href="#">
+      Cookie Policy
+     </a>
+    </nav>
+    <p class="text-center text-[#a1866f] text-xs mt-6 select-none">
+     © 2024 Vanellé. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
